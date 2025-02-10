@@ -220,7 +220,7 @@ fi
 
 # check to see if the correct header files are installed
 # - problem with fedora 40 reported
-if [ ! -d "/lib/modules/$( -r)/build" ]; then
+if [ ! -d "/lib/modules/$(uname_r)/build" ]; then
 	echo "Your kernel header files aren't properly installed."
 	echo "Please consult your distro documentation or user support forums."
 	echo "Once the header files are properly installed, please run \"sudo ./${SCRIPT_NAME}\""
